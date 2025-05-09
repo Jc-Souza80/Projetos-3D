@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+body {
+  background-color: rgb(221, 221, 221);
+}
+
+p {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+.projetos h1 {
+  font-size: 40px;
+}
+.logo {
+  width: 100%;
+  height: auto;
+  display: block; /* remove espaçamento abaixo da imagem */
+}
+.meu {
+  display: flex;
+  object-position: center;
+  object-position: center;
+  align-content: space-around;
+  justify-content: space-around;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.titulo {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-bottom: 1px solid #999898;
+}
+
+.titulo h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.titulo h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.titulo p {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.sobre-mim h3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre-mim p {
+  display: flex;
+  flex-direction: column;
+  text-indent: 30px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.servicos h3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.servicos ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid #999898;
+}
+
+.projetos h2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.carrossel-uno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrossel-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.carrossel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+  padding: 10px;
+}
+
+.carrossel img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #00000088;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.seta.esquerda {
+  left: 0;
+}
+
+.seta.direita {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .carrossel {
+    flex-direction: column;
+    overflow-x: hidden;
+    align-items: center;
+  }
+
+  .seta {
+    display: none;
+  }
+}
+
+.contatos {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.contato {
+  border-top: 1px solid #999898;
+  display: flex;
+  justify-content: center;
+}
